@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="faq-box">
+      <picture>
+        <source
+          srcset="./assets/illustration-woman-online-desktop.svg"
+          media="(min-width: 850px)"
+        />
+        <img
+          class="principal-img"
+          src="./assets/illustration-woman-online-mobile.svg"
+          alt=""
+        />
+      </picture>
+
+      <picture>
+        <source
+          srcset="./assets/bg-pattern-desktop.svg"
+          media="(min-width: 850px)"
+        />
+        <img
+          class="secondary-img"
+          src="./assets/bg-pattern-mobile.svg"
+          alt=""
+        />
+      </picture>
+
+      <picture>
+        <source
+          srcset="./assets/illustration-box-desktop.svg"
+          media="(min-width: 850px)"
+        />
+        <img class="box-img" src="" alt="" />
+      </picture>
+
+      <h1>FAQ</h1>
+
+      <div class="questions">
+        <div class="divided">
+          <p id="quest">How many team members can I invite?</p>
+          <button onclick="Mudarestado('disc', 'quest')">
+            <img src="./assets/icon-arrow-down.svg" alt="" />
+          </button>
+        </div>
+
+        <span id="disc"
+          >You can invite up to 2 additional users on the Free plan. There is no
+          limit on team members for the Premium plan.</span
+        >
+      </div>
+
+      <div class="questions">
+        <div class="divided">
+          <p id="quest2">What is the maximum file upload size?</p>
+          <button onclick="Mudarestado('disc2', 'quest2')">
+            <img src="./assets/icon-arrow-down.svg" alt="" />
+          </button>
+        </div>
+
+        <span id="disc2"
+          >No more than 2GB. All files in your account must fit your allotted
+          storage space.</span
+        >
+      </div>
+
+      <div class="questions">
+        <div class="divided">
+          <p id="quest3">How do I reset my password?</p>
+          <button onclick="Mudarestado('disc3', 'quest3')">
+            <img src="./assets/icon-arrow-down.svg" alt="" />
+          </button>
+        </div>
+
+        <span id="disc3"
+          >Click “Forgot password” from the login page or “Change password” from
+          your profile page. A reset link will be emailed to you.</span
+        >
+      </div>
+
+      <div class="questions">
+        <div class="divided">
+          <p id="quest4">Can I cancel my subscription?</p>
+          <button onclick="Mudarestado('disc4', 'quest4')">
+            <img src="./assets/icon-arrow-down.svg" alt="" />
+          </button>
+        </div>
+
+        <span id="disc4"
+          >Yes! Send us a message and we’ll process your request no questions
+          asked.</span
+        >
+      </div>
+
+      <div class="questions">
+        <div class="divided">
+          <p id="quest5">Do you provide additional support?</p>
+          <button onclick="Mudarestado('disc5', 'quest5')">
+            <img src="./assets/icon-arrow-down.svg" alt="" />
+          </button>
+        </div>
+
+        <span id="disc5"
+          >Chat and email support is available 24/7. Phone lines are open during
+          normal business hours.</span
+        >
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

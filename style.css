@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+
+  background: linear-gradient(
+    180deg,
+    rgba(175, 103, 233, 1) 46%,
+    rgba(101, 101, 231, 1) 100%
+  );
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  font-size: 1.4rem;
+
+  max-width: 35rem;
+  margin: 0 auto;
+
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+
+.principal-img {
+  display: flex;
+  width: 25rem;
+  margin: 0 auto;
+
+  z-index: 1;
+
+  position: absolute;
+  top: -11rem;
+  left: 5rem;
+}
+
+.secondary-img {
+  display: flex;
+  width: 25rem;
+  margin: 0 auto;
+
+  position: absolute;
+  top: 1rem;
+  left: 5rem;
+}
+
+.faq-box {
+  position: relative;
+
+  background-color: white;
+
+  padding: 4rem 3rem 5rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  border-radius: 3rem;
+
+  margin: 0 auto;
+}
+
+.questions {
+  border-bottom: 1px #e7e7e9 solid;
+  padding-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.divided {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-box h1 {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+#quest,
+#quest2,
+#quest3,
+#quest4,
+#quest5 {
+  font-weight: normal;
+}
+
+#disc,
+#disc2,
+#disc3,
+#disc4,
+#disc5 {
+  display: none;
+  color: hsl(0, 0%, 43%);
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}
+
+.faq-box button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (width: 320px) {
+  .principal-img,
+  .secondary-img {
+    left: 4rem;
+  }
+}
+
+@media (min-width: 850px) {
+  body {
+    display: flex;
+    align-items: center;
+
+    max-width: 110rem;
+
+    margin: 0 auto;
+
+    padding-top: 15rem;
+  }
+
+  .faq-box {
+    width: 100rem;
+    padding: 6rem 6rem 6rem 45rem;
+  }
+
+  .faq-box h1 {
+    text-align: start;
+  }
+
+  .principal-img {
+    width: 46rem;
+
+    top: 9rem;
+    left: 0rem;
+
+    object-position: right 8rem bottom 0;
+  }
+
+  .secondary-img {
+    width: 77rem;
+    height: 100rem;
+
+    top: 0rem;
+    left: 0rem;
+
+    object-position: right 40rem bottom 32rem;
+  }
+
+  .box-img {
+    position: absolute;
+
+    top: 22.5rem;
+    left: -10rem;
+
+    z-index: 1;
+  }
+}
